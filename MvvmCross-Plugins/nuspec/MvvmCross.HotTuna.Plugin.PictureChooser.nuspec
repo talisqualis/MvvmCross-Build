@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>MvvmCross.HotTuna.Plugin.PictureChooser</id>
+		<version>4.0.0-beta7</version>
+		<title>MvvmCross - PictureChooser Plugin</title>
+		<authors>MvvmCross</authors>
+		<owners>Stuart Lodge</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>https://github.com/MvvmCross/MvvmCross-Plugins</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+
+This package contains the 'PictureChooser' plugin for MvvmCross</description>
+		<tags>mvvm mvvmcross cross xamarin android ios forms monodroid monotouch xamarin.android xamarin.ios xamarin.forms wpf windows8 winrt net net45 netcore wp wpdev windowsphone windowsstore uwp plugin</tags>
+		<iconUrl>http://i.imgur.com/BvdAtgT.png</iconUrl>
+		<dependencies>
+			<group targetFramework ="net">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="win">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="wp">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="wpa">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="MonoAndroid">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="MonoTouch">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="Xamarin.iOS">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="portable-net45+win8+wpa81+wp8">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="uap">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+			<group targetFramework ="dotnet">
+				<dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta7" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- src -->
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser" />
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser.WindowsStore\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser.WindowsStore" />
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser.WindowsPhone\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser.WindowsPhone" />
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser.WindowsCommon\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser.WindowsCommon" />
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser.Droid\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser.Droid" />	
+		<file src="..\PictureChooser\MvvmCross.Plugins.PictureChooser.Touch\**\*.cs" 
+			target="src\MvvmCross.Plugins.PictureChooser.Touch" />	
+
+		<!-- PCL -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" 
+			target="lib\portable-win+net45+wp8+win8+wpa81" />
+
+		<!-- dotnet -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" 
+			target="lib\dotnet" />
+
+		<!-- store -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\netcore45" />
+		<file src="..\bin\Release\Mvx\WindowsStore\MvvmCross.Plugins.PictureChooser.WindowsStore.*" target="lib\netcore45" />
+		<file src="BootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\netcore45\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+		<!-- phone -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\wp8" />
+		<file src="..\bin\Release\Mvx\WindowsPhone\MvvmCross.Plugins.PictureChooser.WindowsPhone.*" target="lib\wp8" />
+		<file src="BootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\wp8\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+		<!-- windows common -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\win81" />
+		<file src="..\bin\Release\Mvx\WindowsStore\MvvmCross.Plugins.PictureChooser.WindowsStore.*" target="lib\win81" />
+		<file src="BootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\win81\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\wpa81" />
+		<file src="..\bin\Release\Mvx\WindowsPhoneStore\MvvmCross.Plugins.PictureChooser.WindowsPhoneStore.*" target="lib\wpa81" />
+		<file src="BootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\wpa81\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+		<!-- droid -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\MonoAndroid" />
+		<file src="..\bin\Release\Mvx\Droid\MvvmCross.Plugins.PictureChooser.Droid.*" target="lib\MonoAndroid" />
+		<file src="BootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+		<!-- touch -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.PictureChooser.*" target="lib\Xamarin.iOS10" />
+		<file src="..\bin\Release\Mvx\Touch\MvvmCross.Plugins.PictureChooser.Touch.*" target="lib\Xamarin.iOS10" />
+		<file src="TouchBootstrapContent\PictureChooserPluginBootstrap.cs.pp" target="content\Xamarin.iOS10\Bootstrap\PictureChooserPluginBootstrap.cs.pp" />
+
+	</files>
+</package>
+
+
+
+
+
+
+
+
+
+
